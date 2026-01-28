@@ -1,0 +1,166 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Infographic & Video — Climate Awareness</title>
+  <style>
+    :root {
+      --max-width: 900px;
+      --accent: #0b66c3;
+      --muted: #666;
+      --bg: #f7f9fc;
+    }
+    body {
+      font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+      margin: 0;
+      padding: 2rem;
+      background: var(--bg);
+      color: #111;
+      display: flex;
+      justify-content: center;
+    }
+    .container {
+      width: 100%;
+      max-width: var(--max-width);
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 6px 18px rgba(12,20,30,0.08);
+      padding: 1.5rem;
+      box-sizing: border-box;
+    }
+    header h1 {
+      margin: 0 0 0.25rem 0;
+      font-size: 1.5rem;
+    }
+    header p.lead {
+      margin: 0 0 1rem 0;
+      color: var(--muted);
+    }
+    .grid {
+      display: grid;
+      gap: 1rem;
+      grid-template-columns: 1fr;
+    }
+    @media (min-width: 760px) {
+      .grid {
+        grid-template-columns: 1fr 1fr;
+        align-items: start;
+      }
+    }
+    figure {
+      margin: 0;
+      background: #fff;
+      border-radius: 8px;
+      padding: 0.5rem;
+      text-align: center;
+      border: 1px solid #eee;
+    }
+    figure img {
+      width: 100%;
+      height: auto;
+      border-radius: 4px;
+      display: block;
+    }
+    figcaption {
+      margin-top: 0.5rem;
+      font-size: 0.9rem;
+      color: var(--muted);
+    }
+    .video-card {
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+    }
+    .video-card .embed {
+      position: relative;
+      padding-top: 56.25%;
+      overflow: hidden;
+      border-radius: 8px;
+      border: 1px solid #eee;
+    }
+    .video-card .embed iframe {
+      position: absolute;
+      top: 0; left: 0; width: 100%; height: 100%;
+      border: 0;
+    }
+    .controls {
+      display:flex;
+      gap: 0.5rem;
+      align-items: center;
+    }
+    .btn {
+      background: var(--accent);
+      color: white;
+      padding: 0.45rem 0.65rem;
+      border-radius: 6px;
+      text-decoration: none;
+      font-size: 0.95rem;
+    }
+    footer {
+      margin-top: 1rem;
+      font-size: 0.85rem;
+      color: var(--muted);
+      display:flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
+  </style>
+</head>
+<body>
+  <div class="container" role="main">
+    <header>
+      <h1>Climate Awareness Infographic & Video</h1>
+      <p class="lead">
+        A visual infographic highlighting important climate facts, paired with an educational animated video explaining the causes and solutions to climate change.
+      </p>
+    </header>
+
+    <section class="grid">
+      <div>
+        <figure>
+          <!-- PNG infographic file -->
+          <img src="https://img.freepik.com/free-vector/hand-drawn-flat-design-climate-change-infographic_23-2149092318.jpg" alt="Infographic showing climate change facts and solutions">
+          <figcaption>Infographic: Key climate change facts and actions we can take.</figcaption>
+        </figure>
+      </div>
+
+      <div class="video-card">
+        <div class="embed">
+          <!-- Climate change educational video (embeddable) -->
+         <iframe
+            src="https://www.youtube.com/embed/lPgZfhnCAdI?autoplay=1&mute=1"
+            title="Climate Change Explained"
+            allow="autoplay; encrypted-media"
+            allowfullscreen>
+        </iframe>
+
+        </div>
+
+        <div class="controls">
+          <a class="btn"
+             href="https://www.youtube.com/watch?v=lPgZfhnCAdI"
+             target="_blank"
+             rel="noopener noreferrer">
+            Watch on YouTube
+          </a>
+          <span style="color:var(--muted); font-size:0.9rem;">
+            Educational video about causes and solutions of climate change
+          </span>
+        </div>
+
+        <p style="margin-top:0.75rem; color:var(--muted); font-size:0.95rem;">
+          This video explains how human activities contribute to climate change and what actions can help reduce environmental impact.
+        </p>
+      </div>
+    </section>
+
+    <footer>
+      <div>&copy; 2026 Climate Awareness Project — All rights reserved.</div>
+      <div style="color:var(--muted);">Created by nganb2509883</div>
+    </footer>
+  </div>
+</body>
+</html>
